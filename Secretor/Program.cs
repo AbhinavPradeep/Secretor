@@ -11,7 +11,6 @@ namespace ConsoleApp1
             string EncryptedSentence = "";
 
             Console.WriteLine("Reading file...");
-            //string Msg = Console.ReadLine();
             string Msg = File.ReadAllText(@"C:\Users\Abhin\source\repos\Secretor\MySecret.txt");
 
             StringLength = Msg.Length;
@@ -135,7 +134,7 @@ namespace ConsoleApp1
            
             writer.WriteLine(EncryptedSentence);
             writer.Close();
-            //Console.WriteLine("Encryped sentence is " + EncryptedSentence);
+            
             Console.Read();
         }
     }
